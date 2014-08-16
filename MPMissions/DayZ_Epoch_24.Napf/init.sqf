@@ -119,7 +119,7 @@ progressLoadingScreen 1.0;
 if (isServer) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\missions\DayZ_Epoch_24.Napf\dynamic_vehicle.sqf";
 	//Compile vehicle configs
-	
+	NapfMap = true;
 	// Add trader citys
 	_nil = [] execVM "\z\addons\dayz_server\missions\DayZ_Epoch_24.Napf\mission.sqf";
 	_serverMonitor = execVM "\z\addons\dayz_code\system\server_monitor.sqf";
@@ -147,7 +147,7 @@ if (!isDedicated) then {
 	};
 	
 	//anti Hack
-	 execVM "fixes\antihack.sqf"; //moved admin check into anti hack
+	 //execVM "fixes\antihack.sqf"; //moved admin check into anti hack
 	
 	//Lights
 	//[false,12] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";

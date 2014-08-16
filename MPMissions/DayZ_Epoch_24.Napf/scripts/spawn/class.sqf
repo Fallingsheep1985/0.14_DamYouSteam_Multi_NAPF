@@ -1,7 +1,7 @@
 private ["_binocs","_currentSex","_dragee","_hasBinocs","_hasPistol","_hasPistolAmmo","_itemNew","_model","_myModel","_pistols","_pistolAmmo","_primaryWep","_qty"];
 
-classfill = compile preprocessFileLineNumbers "spawn\classfill.sqf";
-classpick = compile preprocessFileLineNumbers "spawn\classpick.sqf";
+classfill = compile preprocessFileLineNumbers "scripts\spawn\classfill.sqf";
+classpick = compile preprocessFileLineNumbers "scripts\spawn\classpick.sqf";
 classSelect = [];
 
 if (!_isPZombie) then {
