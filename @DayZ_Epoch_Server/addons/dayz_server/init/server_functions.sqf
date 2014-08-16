@@ -514,17 +514,79 @@ spawn_mineveins = {
 	};
 };
 
+if (ChernarusMap)then{
 //Sector FNG inland
-execVM "\z\addons\dayz_server\CustomBuildings\sectorfng\sectorfng_init.sqf";
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\sectorfng\sectorfng_init.sqf";
+
+//IXXO
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\balota.sqf";
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\kamenka.sqf";
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\Krasno.sqf";
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\northeast.sqf";
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\vybor.sqf";
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\basebor.sqf";
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\basedichina.sqf";
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\basenovy.sqf";
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\Zeleno.sqf";
+                                             
+//Caves                                      
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\Prud_Cave.sqf";
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\North_Cave.sqf";
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\South_Cave.sqf";
+                                             
+//Kameka mine                                
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\mine_grotte.sqf";//removed ore and added to separate spawn
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\mine_grotte_ore.sqf";//ore
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\box_la_grotte.sqf";
+                                             
+//CDC Balota + Trader                        
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\Trader_CDC_Balota.sqf";
+
+//Altar
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\altar.sqf";
+
+//Golden River MIne
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\golden_river_mine.sqf";
+
+//cherno heliport
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\heliport.sqf";
+
+//beached aircraft carrier
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\aircraftcarrier.sqf";
 
 //BANK
-execVM "\z\addons\dayz_server\CustomBuildings\banks\nbank_novy_sobor.sqf";
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\banks\nbank_novy_sobor.sqf";
 
-//Red Zone
-[] execVM "\z\addons\dayz_server\CustomBuildings\insel.sqf";
+//East coast cherno
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\Eastcoast.sqf";
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\Eastcoast2.sqf";
 
+//Black Lake Castle
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\blacklakecastle.sqf";
+
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\kabinocheckpoint.sqf";
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\otmel.sqf";
+
+//road from dam to sector FNG
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\roadpobeda.sqf";
+
+//Black forest outpost
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\blackforestoutpost.sqf";
+
+//Electro
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\electro.sqf";
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\electroZI.sqf";
+
+//Cherno
+execVM "\z\addons\dayz_server\CustomBuildings\chernarus\Cherno.sqf";
+};
+if(NapfMap)then{
+//Insel
+execVM "\z\addons\dayz_server\CustomBuildings\napf\insel.sqf";
 //Blitz Island
-[] ExecVM "\z\addons\dayz_server\CustomBuildings\blitz-island.sqf";
+execVM "\z\addons\dayz_server\CustomBuildings\napf\blitz-island.sqf";
+};
+
 
 if(isnil "DynamicVehicleDamageLow") then {
 	DynamicVehicleDamageLow = 0;
